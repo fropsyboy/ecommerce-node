@@ -6,7 +6,7 @@ cache:
     - "node_modules"
 
 deploy:
-  provider: elasticbeanstalk
+  provider: s3
   access_key_id:
     secure: "AKIARBDC6E6PC6ZKHQ54"
   secret_access_key:
@@ -15,6 +15,7 @@ deploy:
   app: "ecommerce"
   env: "production"
   bucket: "ecommerce-nodes"
+  edge: true
   on:
     branch: master
     
