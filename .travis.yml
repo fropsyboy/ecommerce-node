@@ -6,9 +6,9 @@ deploy:
   provider: elasticbeanstalk
   access_key_id: "$ACCESSKEYID"
   secret_access_key: "$SECRETACCESSKEY"
-  region: "us-east-1"
-  app: "node-ecco"
-  env: "node-ecc0-environment"
+  region: "us-east-2"
+  app: "nodeecco"
+  env: "Nodeecco-env"
   bucket_name: "elasticbeanstalk-us-east-2-173333581312"
   on:
     branch: elasticbean
