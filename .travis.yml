@@ -11,9 +11,6 @@ deploy:
     secure: "AKIARBDC6E6PC6ZKHQ54"
   secret_access_key:
     secure: "${SECRETACCESSKEYZ}"
-  region: "us-east-1"
-  app: "ecommerce"
-  env: "production"
   bucket: "ecommerce-nodes"
   edge: true
   on:
