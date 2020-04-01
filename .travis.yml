@@ -5,12 +5,15 @@ cache:
   directories:
     - "node_modules"
 
+install:
+  - cd npm install && cd ..
+
 deploy:
   provider: s3
   access_key_id:
-    secure: "${ACCESSKEYIDZ}"
+    secure: "AKIAICLDSQ5BER64XTBA"
   secret_access_key:
-    secure: "${SECRETACCESSKEY}"
+    secure: "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"
   bucket: "ecommerce-trial"
   edge: true
   on:
