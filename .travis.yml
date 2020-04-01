@@ -14,7 +14,7 @@ deploy:
   region: "us-east-1"
   app: "ecommerce"
   env: "production"
-  bucket_name: "elasticbeanstalk-us-east-1-071074457502"
+  bucket_name: "ecommerce-nodes"
   on:
     branch: master
 
