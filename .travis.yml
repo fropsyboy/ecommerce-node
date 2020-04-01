@@ -20,5 +20,5 @@ deploy:
     branch: master
     
 
-  after_deploy: 
+after_deploy: 
   - ./run.sh
