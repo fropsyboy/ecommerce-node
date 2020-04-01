@@ -14,7 +14,7 @@ deploy:
   region: "us-east-1"
   app: "ecommerce"
   env: "production"
-  bucket_name: "ecommerce-nodes"
+  bucket: "ecommerce-nodes"
   on:
     branch: master
 
