@@ -12,7 +12,7 @@ deploy:
   region: "us-east-1"
   app: "node-ecco"
   env: "node-ecc0-environment"
-  bucket_name: "node-echo"
+  bucket_name: "elasticbeanstalk-us-east-2-173333581312"
   on:
     branch: elasticbean
     
