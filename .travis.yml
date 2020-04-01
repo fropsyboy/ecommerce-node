@@ -8,9 +8,9 @@ cache:
 deploy:
   provider: elasticbeanstalk
   access_key_id:
-    secure: AKIARBDC6E6PLIMPM3OA
+    secure: "AKIARBDC6E6PC6ZKHQ54"
   secret_access_key:
-    secure: "${SECRETACCESSKEY}"
+    secure: "${SECRETACCESSKEYZ}"
   region: "us-east-1"
   app: "ecommerce"
   env: "production"
