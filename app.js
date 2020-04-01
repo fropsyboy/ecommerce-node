@@ -91,7 +91,7 @@ app.use((req, res, next) => {
     });
 });
 
-app.use('/adminRoute', adminRoutes);
+app.use('/admin', adminRoutes);
 app.use(shopRoutes);
 app.use(authRoutes);
 
