@@ -7,10 +7,8 @@ cache:
 
 deploy:
   provider: s3
-  access_key_id:
-    secure: "$ACCESSKEYID"
-  secret_access_key:
-    secure: "$SECRETACCESSKEY"
+  access_key_id: "$ACCESSKEYID"
+  secret_access_key: "$SECRETACCESSKEY"
   bucket: "ecommerce-trial"
   edge: true
   on:
