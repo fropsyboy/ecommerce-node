@@ -15,7 +15,7 @@ deploy:
   application: MyApp
   deployment_group: MyDeploymentGroup
   on:
-    branch: production
+    branch: master
 
   after_deploy: 
   - ./run.sh
