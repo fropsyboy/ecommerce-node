@@ -4,3 +4,20 @@ node_js:
 cache:
   directories:
     - "node_modules"
+
+deploy:
+  provider: elasticbeanstalk
+  wait_until_deployed: true
+  access_key_id:
+    secure: "AKIARBDC6E6PLIMPM3OA"
+  secret_access_key:
+    secure: "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"
+  region: "us-east-1"
+  app: "ecommerce"
+  env: "production"
+  bucket_name: "elasticbeanstalk-us-east-1-071074457502"
+  on:
+    branch: master
+
+  after_deploy: 
+  - ./run.sh
