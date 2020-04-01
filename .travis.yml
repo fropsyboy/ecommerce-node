@@ -6,16 +6,18 @@ cache:
     - "node_modules"
 
 deploy:
-  provider: codedeploy
-  access_key_id: "AKIARBDC6E6PLIMPM3OA"
-  secret_access_key: "${SECRETACCESSKEY}"
+  provider: elasticbeanstalk
+  access_key_id:
+    secure: AKIARBDC6E6PLIMPM3OA
+  secret_access_key:
+    secure: "${SECRETACCESSKEY}"
+  region: "us-east-1"
+  app: "ecommerce"
+  env: "production"
   bucket: "ecommerce-nodes"
-  key: latest/MyApp.zip
-  bundle_type: zip
-  application: MyApp
-  deployment_group: MyDeploymentGroup
   on:
     branch: master
+    
 
   after_deploy: 
   - ./run.sh
