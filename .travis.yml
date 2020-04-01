@@ -6,13 +6,15 @@ cache:
     - "node_modules"
 
 deploy:
-  provider: s3
+  provider: elasticbeanstalk
   access_key_id: "$ACCESSKEYID"
   secret_access_key: "$SECRETACCESSKEY"
-  bucket: "ecommerce-trial"
-  edge: true
+  region: "us-east-1"
+  app: "node-ecco"
+  env: "node-ecc0-environment"
+  bucket_name: "node-echo"
   on:
-    branch: staging
+    branch: elasticbean
     
 
 after_deploy: 
