@@ -1,4 +1,4 @@
-node('test'){
+node('master'){
     stage('stage1') {
         sh '''echo  stage1 steps'''
     }
