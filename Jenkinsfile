@@ -1,20 +1,15 @@
-import java.util.Date
-import groovy.json.*
-
-
-def isMaster = env.BRANCH_NAME == 'master'
-def isStaging = env.BRANCH_NAME == 'staging'
-
-if(isMaster){
-    node{
-        stage('initializing') {
-            sh '''echo  stage1'''
+pipeline {
+    agent {
+        docker {
+            image 'node:6-alpine' 
+            args '-p 3000:3000' 
         }
-        stage('stage2') {
-            sh '''echo stage2'''
-        }
-        stage('stage3') {
-            sh '''echo stage3'''
+    }
+    stages {
+        stage('Build') { 
+            steps {
+                sh 'npm install' 
+            }
         }
     }
 }
